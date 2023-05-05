@@ -3,7 +3,7 @@
 
 ## Description
 
-The objective of this study is to examine how the timing and frequency of sales calls and targeted emails impact customer satisfaction and sales performance in the medical device industry. To achieve this goal, we will conduct an exploratory analysis and compare the performance of several classification models using a three-class approach to predict customer satisfaction based on sales calls, targeted emails, and sales made. The models we will evaluate include Naive Bayes, Decision Tree, Random Forest, Gradient Boosting Classifier, and Multi-layer Perceptron. By selecting the best-performing model, we aim to gain insights that can inform effective sales strategies in the medical device industry.
+The objective of this study is to examine how the timing and frequency of sales calls and targeted emails impact customer satisfaction and sales performance in the medical device industry. To achieve this goal, we will conduct an exploratory analysis and compare the performance of several classification models using a three-class classification to predict customer satisfaction based on sales calls, targeted emails, and sales made. The models we will evaluate include Naive Bayes, Decision Tree, Random Forest, Gradient Boosting Classifier, and Multi-layer Perceptron. By selecting the best-performing model, we aim to gain insights that can inform effective sales strategies in the medical device industry.
 
 
 ## Getting Started
