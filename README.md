@@ -1,63 +1,55 @@
-# Pre-Processing and Machine Learning Pipeline for Instrumented Insole GRFs
+# Predicting Customer Satisfaction Using Machine Learning: A Comparative Study of Naive Bayes, Random Forest, Decision Tree, Gradient Boosting, and MLP Classifiers
+
 
 ## Description
 
-The purpose of this code is to import, clean, normalize and manipulate Ground Reaction Force (GRF) data from instrumented insoles in pandas DataFrame format
+The objective of this study is to examine how the timing and frequency of sales calls and targeted emails impact customer satisfaction and sales performance in the medical device industry. To achieve this goal, we will conduct an exploratory analysis and compare the performance of several classification models using a three-class approach to predict customer satisfaction based on sales calls, targeted emails, and sales made. The models we will evaluate include Naive Bayes, Decision Tree, Random Forest, Gradient Boosting Classifier, and Multi-layer Perceptron. By selecting the best-performing model, we aim to gain insights that can inform effective sales strategies in the medical device industry.
+
 
 ## Getting Started
 
 ### Dependencies
 
-Python 3
-
-Pandas
-
-Matplotlib
-
-Spicy
+- Pandas: for data manipulation and analysis
+- NumPy: for numerical computing
+- Seaborn: for data visualization
+- Matplotlib: for data visualization
+- Scikit-learn: for machine learning tasks such as clustering
 
 ### Installing
 
-To run this code, you must have Python installed. You can install the necessary libraries using pip:
-- import pandas as pd
-- import numpy as np
-- import matplotlib.pyplot as plt
-- from scipy.signal import find_peaks
+To run this code, you must have Python installed. You can install the necessary libraries using pip: 
+-pip install pandas 
+-pip install numpy
+-pip install seaborn 
+-pip install matplotlib
+-pip install scikit-learn
 
 Additionally, this code requires the following files to be present in the working directory:
+- SalesOfMedicalDevices.xlsx
 
-- The raw GRF files (in this case: tred02.txt)
-- An excel file with the labels (in this case: labels tredmill.xlsx)
+### Usage
 
-### Instructions
+Download the SalesOfMedicalDevices.xlsx file and save it in the same directory as the code file.
 
-To run the code, execute each cell in the order presented. The resulting DataFrame will be printed after each cell.
+Open the code file (filename.py) in a Python editor or IDE.
 
-The tred02.txt (or an equivalnent file) must be in the correct format, as follows:
+Run the code to perform the following analysis tasks on the dataset:
 
-- The first row contains strings describing the contents of each column.
-- The second row contains units for each column.
-- The third row contains empty cells.
-- The fourth row contains the data, with the first column containing time in seconds.
-
-
-The labels tredmill.xlsx (or an equivalent file)  must have the following format:
-
-- The first row contains column headers.
-- The first column contains comments describing each row.
-- The second column contains the body weight of each subject, in kg.
-
-The resulting DataFrame (output) will contain the following columns:
-- Time: The time in seconds.
-- Forefoot: The GRF measured by the forefoot sensor.
-- Midfoot: The GRF measured by the midfoot sensor.
-- Heel: The GRF measured by the heel sensor.
-- Total: The total GRF measured by all sensors.
-- NormForefoot: The normalized GRF measured by the forefoot sensor.
-- NormMidfoot: The normalized GRF measured by the midfoot sensor.
-- NormHeel: The normalized GRF measured by the heel sensor.
-- NormTotal: The normalized total GRF.
-- AT_loading: The calculated Achilles tendon loading.
+Read the Excel file into a Pandas dataframe.
+Check the size of the dataset.
+Check the data types of each variable.
+Check the unique values for each column.
+Check for missing values.
+Calculate summary statistics.
+Check for duplicates.
+Check the correlation matrix and visualize it using a heatmap.
+Visualize the distribution of each numerical variable using histograms.
+Detect outliers using the IQR method and visualize them using boxplots.
+Standardize the numerical columns and perform K-Means clustering with k=3.
+Reduce data dimensions from 3 to 2 using PCA.
+Run and compare the 5 machine learning models (Naive Bayes, Decision Tree, Random Forest, Gradient Boosting Classifier, and Multi-layer Perceptron)
+The output of each analysis task or model will be printed in the console or displayed in a plot.
 
 ## Help
 
@@ -82,4 +74,4 @@ This project is licensed under the laiavancells License - see the LICENSE.md fil
 
 ## Acknowledgments
 
-I would like to thank Dr. Drazan and Dr. Bandara for their valuable feedback and contributions to this project. Their insights and expertise were instrumental in improving the quality of our work.
+I would like to thank Dr. Bandara for his valuable feedback and contributions to this project.
